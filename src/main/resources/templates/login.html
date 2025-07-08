@@ -1,0 +1,10 @@
+<body style="background-color: rgb(249, 249, 249)">
+<form th:action="@{/login}" method="post">
+  <label>Username:</label><input type="text" name="username"/>
+  <label>Password:</label><input type="password" name="password"/>
+  <button colour = blue type="submit">adding</button>
+  <div th:if="${param.error}">Invalid credentials</div>
+  <div th:if="${param.logout}">You’ve been logged out.</div>
+</form>
+
+</body>
